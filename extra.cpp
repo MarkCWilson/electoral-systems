@@ -17,7 +17,7 @@ vector<double>  Extra::add(vector<double> v, vector<double> w)
 	}
 	else
 	{
-		x = v;
+		x = v; // return v if the sizes don't match
 	}
 	return x;
 }

@@ -28,7 +28,7 @@ namespace Extra
 	}	
 	
 	
-	std::vector<double>  add(std::vector<double> v, std::vector<double> w); //need to check size
+	std::vector<double> add(std::vector<double> v, std::vector<double> w); 
 
 	
 	
