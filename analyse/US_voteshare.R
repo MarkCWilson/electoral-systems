@@ -3,7 +3,7 @@
 ## Purpose: Analysis of two-party Dem/Rep vote share (excludes votes for other parties) by district
 ## Assumes columns state,district,party,votes in input csv
 ##
-##
+## NOTE: old, needs cleanup
 
 
 library(reshape2)
