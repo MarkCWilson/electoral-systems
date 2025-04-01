@@ -1,0 +1,7 @@
+setwd("/Users/mwil211/Dropbox/Mark_research/programs/electoral_C++")
+t <-read.csv("swingtest100.2.0", header=FALSE, sep = "", col.names=c("new", "old", "swing"))
+library(ggplot2)
+ggplot(t, aes(x=t$old, y=t$new-t$old-t$swing)) + geom_point() + labs(x = "Old vote share") + labs(y = "District swing - national swing")
+#ggplot(t, aes(x=t$old, y=(t$new-t$old)/t$swing)) + geom_point() + ylim(-100,100)
+cor(t$old, t$new)
+lm(t$new ~ t$old)
